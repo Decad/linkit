@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linkfiy Example</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+      <div>
+        <h1>Protocol eg. http://google.com</h1>
+        <div class="test">
+          <ul>
+            <li>http://google.com</li>
+            <li>https://google.co.uk</li>
+            <li>http://www.google.au</li>
+            <li>ftp://www.google.com</li>
+          </ul>
+        </div>
+        <h1>plain url eg. www.google.com</h1>
+        <div class="test">
+          <ul>
+            <li>www.google.com</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="linkit.js"></script>
+  <script>
+    $(function() {
+        $('body').linkit()
+    })
+  </script>
+</body>
+</html>

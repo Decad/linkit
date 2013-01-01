@@ -9,16 +9,12 @@ Usage
 On an element
 
 ```javascript
-
-$(selector).linkit()
-
+$(selector).linkit(options)
 ```
 linkit can aslo be used on a string like so:
 
 ```javascript
-
-$.linkit(string)
-
+$.linkit(string, options)
 ```
 
 Options
@@ -35,4 +31,14 @@ $(selector).linkit({
    wwwTemplate: '$1<a href="http://$2">$2</a>'
 })
 
+```
+
+**Example**
+
+To set all links to have a target of _blank use the following options.
+
+```javascript
+$(selector).linkit({
+    target: "_blank"
+})
 ```
